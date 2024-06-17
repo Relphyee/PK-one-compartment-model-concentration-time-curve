@@ -87,7 +87,7 @@
         </div>
         <div class="input-container">
             <label for="time">Time Range (t):</label>
-            <input type="number" id="time" step="any" value="24">
+            <input type="number" id="time" step="any">
             <span>h</span>
         </div>
         <div class="input-container" style="justify-content: center;">
@@ -136,8 +136,8 @@
 
             const layout = {
                 title: 'PK One-Compartment Model Concentration-Time Curve',
-                xaxis: { title: 'Time (t)' },
-                yaxis: { title: 'Concentration (C)' }
+                xaxis: { title: 'Time (h)' },
+                yaxis: { title: 'Concentration (ng/L)' }
             };
 
             Plotly.newPlot('plot', data, layout);
